@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="public/images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- uikit -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit-icons.min.js"></script>
+
+  <!-- colours & styles -->
+  <link rel="stylesheet" href="public/css/styles.css"/>
+
+  <!-- swiper carousels -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <style>
+    .uk-navbar-toggle-icon svg {
+      height: 25px;
+      width: 25px;
+    }
+    .uk-logo img.uk-padding-small {
+      padding: 5px 0px;
+    }
+    .uk-padding-xsmall {
+      padding: 10px;
+    }
+
+    /* COLOUR_BARS */
+    .rainbow-bar {
+      display:flow-root
+    }
+    .rainbow-bar span {
+      width:16.666%;
+      float:left;
+      height:5px;
+      display: block;
+    }
+    .rainbow-bar .last {
+      width:16.666%!important;
+    }
+
+    .uk-text-underline {
+      text-decoration: underline;
+    }
+
+    .uk-card-transparent,
+    .uk-card-transparent.uk-card-secondary,
+    .uk-card-transparent.uk-card-secondary.darken {
+      background-color: transparent !important;
+    }
+
+    .uk-position-z-index-reset {
+      z-index: 0;
+    }
+
+    .uk-heading-small {
+      font-size: 2.6rem
+    }
+    @media (max-width: 1599px) {
+      .uk-heading-small {
+        font-size: 2.4rem
+      }
+    }
+    @media (max-width: 1199px) {
+      .uk-heading-small {
+        font-size: 2.4rem
+      }
+      .social-wall .uk-heading-medium {
+        font-size: 2.5rem;
+      }
+      .social-wall .uk-text-lead {
+        font-size: 1.1rem;
+      }
+    }
+    @media (max-width: 959px) {
+      .uk-heading-small {
+        font-size: 2.2rem
+      }
+    }
+    @media (max-width: 639px) {
+      .uk-heading-small {
+        font-size: 2rem
+      }
+      .uk-button-large {
+        font-size: .875rem;
+        padding: 0 20px;
+      }
+      .uk-text-large {
+        font-size: 1.2rem;
+        line-height: 1.2;
+      }
+      .social-wall .uk-heading-medium {
+        font-size: 2rem;
+      }
+      .social-wall .uk-text-lead {
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width: 960px) {
+      .uk-height-1-2 {
+        height: 50%;
+      }
+    }
+
+
+
+  </style>
+
+  <header>
+
+    <div class="rainbow-bar">
+      <span class="uk-section-primary uk-section-green"></span>
+      <span class="uk-section-primary"></span>
+      <span class="uk-section-primary uk-section-purple"></span>
+      <span class="uk-section-primary uk-section-pink"></span>
+      <span class="uk-section-primary uk-section-orange"></span>
+      <span class="uk-section-primary uk-section-yellow last"></span>
+    </div>
+
+    <div class="uk-background-secondary darken ukkk-padding uk-padding-remove-horizontal uk-box-shadow-medium uk-position-relative uk-position-z-index">
+
+      <!-- topbar -->
+      <div class="uk-container uk-container-expand">
+        <div class="uk-light uk-grid uk-padding-xsmall uk-padding-remove-horizontal" uk-grid>
+
+          <!-- left -->
+          <div class="uk-width-expand uk-visible@l">
+            <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                  <li><span class="uk-margin-small-right uk-text-purple" uk-icon="location"></span></li>
+                  <li><span class="uk-text-small uk-text-emphasis">St. Joseph’s Hall, Rochfortbridge, Co. Westmeath</span></li>
+                </ul>
+              </div>
+              <div class="uk-width-auto">
+                <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                  <li><span class="uk-margin-small-right uk-text-pink" uk-icon="mail"></span></li>
+                  <li><a class="uk-text-small" href="mailto:sendmail@risehand.com">admin@kcces.ie</a></li>
+                </ul>
+              </div>
+              <div class="uk-width-auto">
+                <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                  <li><span class="uk-margin-small-right uk-text-green" uk-icon="receiver"></span></li>
+                  <li><a class="uk-text-small" href="mailto:sendmail@risehand.com">044 92 24476</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- right -->
+          <div class="uk-width-1-1 uk-width-auto@l uk-flex uk-flex-middle uk-flex-center uk-flex-left@l uk-text-center uk-text-right@l">
+  
+            <div class="uk-grid-small uk-flex-middle uk-flex-center uk-flex-left@l" uk-grid>
+              <div class="uk-width-auto">
+                <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                  <li><span class="uk-margin-small-right uk-text-yellow" uk-icon="happy"></span></li>
+                  <li><span class="uk-text-small uk-text-emphasis">Find us on Socials</span></li>
+                </ul>
+              </div>
+              <div class="uk-width-auto">
+                <ul class="uk-iconnav">
+                  <li><a href="#" uk-icon="icon: facebook; ratio: 1.1" class=""></a></li>
+                  <li><a href="#" uk-icon="icon: instagram; ratio: 1.1" class=""></a></li>
+                  <li><a href="#" uk-icon="icon: bluesky; ratio: 1.1" class=""></a></li>
+                </ul>
+              </div>
+            </div>
+  
+          </div>
+
+        </div>
+      </div>
+
+      <!-- main nav -->
+      <nav class="uk-navbar-container uk-navbar-transparent uk-background-secondary uk-light">
+        <div class="uk-container uk-container-expand">
+          <div uk-navbar="" class="uk-navbar">
+
+            <div class="uk-navbar-left">
+              <a class="uk-navbar-item uk-logo" href="#">
+                <img class="uk-padding-small" src="public/images/logo-dark.png" width="270" height="90" alt="">
+              </a>
+            </div>
+
+            <div class="uk-navbar-center uk-visible@xl">
+              <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Home</a></li>
+                <li>
+                  <a href="#">About <span uk-navbar-parent-icon></span></a>
+                </li>
+                <li>
+                  <a href="#">Employment <span uk-navbar-parent-icon></span></a>
+                </li>
+                <li>
+                  <a href="#">Community <span uk-navbar-parent-icon></span></a>
+                </li>
+                <li>
+                  <a href="#">Training <span uk-navbar-parent-icon></span></a>
+                </li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+              <div class="uk-navbar-item">
+                <ul class="uk-iconnav">
+
+                  <!-- search -->
+                  <li class="uk-flex uk-flex-middle">
+                    <a href="#" uk-icon="icon: search; ratio: 1.2" class="uk-icon"></a>
+                  </li>
+
+                  <!-- button -->
+                  <li class="uk-flex uk-flex-middle uk-visible@s">
+                    <button class="uk-button uk-button-small uk-button-danger uk-button-purple uk-border-rounded">Latest jobs <span uk-icon="icon:arrow-right;ratio:1.2"></span></button>
+                  </li>
+
+                  <!-- mobile -->
+                  <li class="uk-flex uk-flex-middle">
+                    <a class="uk-navbar-toggle uk-navbar-toggle-animate uk-icon uk-navbar-toggle-icon" href="#" uk-navbar-toggle-icon="" role="button" aria-haspopup="true" aria-label="Open menu"></a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <div id="offcanvas-slide" uk-offcanvas>
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center uk-offcanvas-bar-animation uk-offcanvas-slide" role="dialog">
+      <button class="uk-offcanvas-close uk-close-large uk-icon uk-close" type="button" uk-close="" uk-toggle="cls: uk-close-large; mode: media; media: @s" aria-label="Close"></button>
+      <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" uk-nav="">
+        <li class="uk-active"><a href="#">Active</a></li>
+        <li class="uk-parent">
+          <a href="" id="uk-nav-1" role="button" aria-controls="uk-nav-2" aria-expanded="false" aria-disabled="false">Parent <span uk-nav-parent-icon="" class="uk-icon uk-nav-parent-icon"></span></a>
+          <ul class="uk-nav-sub" id="uk-nav-2" role="region" aria-labelledby="uk-nav-1" hidden="">
+            <li role="presentation"><a href="#">Sub item</a></li>
+            <li role="presentation"><a href="#">Sub item</a></li>
+            <li role="presentation"><a href="#">Sub item</a></li>
+            <li role="presentation"><a href="#">Sub item</a></li>
+            <li role="presentation"><a href="#">Sub item</a></li>
+            <li role="presentation"><a href="#">Sub item</a>
+              <ul>
+                <li><a href="#">Sub item</a></li>
+                <li><a href="#">Sub item</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#js-options">Item</a></li>
+        <li><a href="#">Item</a></li>
+      </ul>
+      <div>
+        <div class="uk-grid-small uk-child-width-auto uk-flex-inline uk-grid" uk-grid="">
+          <div class="uk-first-column">
+            <a class="uk-icon-button uk-icon" href="#" uk-icon="icon: facebook"></a>
+          </div>
+          <div>
+            <a class="uk-icon-button uk-icon" href="#" uk-icon="icon: instagram"></a>
+          </div>
+          <div>
+            <a class="uk-icon-button uk-icon" href="#" uk-icon="icon: mail"></a>
+          </div>
+          <div>
+            <a class="uk-icon-button uk-icon" href="#" uk-icon="icon: receiver"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- cover carousel -->
+    <section class="uk-section-secondary darken uk-position-relative uk-position-z-index-reset">
+
+      <!-- swiper -->
+      <div class="uk-container uk-container-expand uk-padding-remove-horizontal">
+        <div id="firstSwiper" class="swiper padded-overflow">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="uk-height-large uk-box-shadow-large">
+                <img class="fit-img uk-position-relative uk-border-rounded" src="public/images/kinnegad/large/image4.jpg" width="1920" alt="">
+                <div class="uk-overlay-primary uk-overlay-navy darken uk-overlay-navy uk-light uk-position-cover uk-position-z-index"></div>
+                <div class="uk-overlay uk-position-center-left uk-position-z-index uk-padding-large">
+                  <div class="uk-width-1-1 uk-width-4-5@m uk-width-4-5@l uk-width-3-5@xl uk-text-center uk-text-left@m">
+                    <span class="uk-text-meta uk-text-large">welcome to the</span>
+                    <h2 class="uk-heading-small uk-margin-small-bottom uk-margin-remove-top">Kinnegad Combined Community Employment Scheme.</h2>
+                    <p class="uk-margin-small-top uk-visible@l">Kinnegad Combined Community Employment Scheme which represents 22 community and voluntary groups across  Westmeath/Offaly/Meath. We work actively alongside sponsors/sub Sponsors to help participants of the scheme gain meaningful practical experience, achieve relevant qualifications and training and offer them support and guidance as they work towards achieving their goals and progressing into sustainable secure employment progressing their careers.</p>
+                    <button class="uk-button uk-button-large uk-button-default uk-border-rounded">Learn more</button>
+                    <button class="uk-button uk-button-large uk-button-danger uk-button-purple uk-border-rounded">Latest jobs <span uk-icon="icon:arrow-right;ratio:1" class="uk-icon"></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <script>
+          const firstSwiper = new Swiper('#firstSwiper', {
+            watchSlidesProgress: true,
+            pagination: {
+              el: '.swiper-pagination',
+            },
+          });
+        </script>
+      </div>
+
+    </section>
+
+    <!-- 4x carousel -->
+    <section class="uk-section-small uk-padding-remove-top uk-section-secondary darken uk-preserve-color">
+      <div class="uk-container uk-container-xlarge">
+
+        <div class="uk-container uk-container-expand">
+          <div id="secondSwiper" class="swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="uk-card uk-card-secondary uk-card-transparent darken uk-card-hover uk-box-shadow-remove">
+                  <div class="uk-card-badge uk-card-badge-green uk-light">CE Scheme</div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Who is eligible?</h3>
+                    <p>In order to be eligible for a Community Employment (CE) scheme, a person must be in receipt of a qualifying social welfare payment for at least 12 months.</p>
+                    <p uk-margin="">
+                      <!-- <a class="uk-button uk-button-default uk-first-column" href="#">Learn more</a> -->
+                      <a class="uk-button uk-button-text" href="#">Learn more about eligibility</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="uk-card uk-card-primary uk-card-green uk-light uk-card-hover uk-box-shadow-remove">
+                  <div class="uk-card-badge uk-card-badge-secondary uk-light">CE Scheme</div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Our Area</h3>
+                    <p>KCCES supports Community Employment participants in Rochfortbridge, Raharney, Killucan/Raharney, Clonard, Castlejordan, Kinnegad, Milltownpass and Ballinabrackey.</p>
+                    <p uk-margin="">
+                      <a class="uk-button uk-button-default uk-first-column" href="#">QQI courses <span uk-icon="icon:arrow-right;ratio:1" class="uk-icon"></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="uk-card uk-card-primary uk-light uk-card-hover uk-box-shadow-remove">
+                  <div class="uk-card-badge uk-card-badge-secondary uk-light">CE Scheme</div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Training</h3>
+                    <p>Training is an integral part of Community Employment. Each learner on CE designs an Individual Training Plan (ILP) which outlines work experience & both job specific & progression training.</p>
+                    <p uk-margin="">
+                      <a class="uk-button uk-button-default uk-first-column" href="#">Learn more <span uk-icon="icon:arrow-right;ratio:1" class="uk-icon"></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="uk-card uk-card-primary uk-card-purple uk-light uk-card-hover uk-box-shadow-remove">
+                  <div class="uk-card-badge uk-card-badge-secondary uk-light">CE Scheme</div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Employment</h3>
+                    <p>The Community Employment (CE) Scheme helps people who are long-term unemployed get back to work by offering part-time, supported work placements with host organisations within their local community.</p>
+                    <p uk-margin="">
+                      <a class="uk-button uk-button-default uk-first-column" href="#">Latest Jobs <span uk-icon="icon:arrow-right;ratio:1" class="uk-icon"></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+          </div>
+          <script>
+            const secondSwiper = new Swiper('#secondSwiper', {
+              watchSlidesProgress: true,
+              pagination: {
+                el: '.swiper-pagination',
+              },
+              autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+              },
+              slidesPerView: 1,
+              spaceBetween: 0,
+              breakpoints: {
+                959: {
+                  slidesPerView: 2,
+                  spaceBetween: 0
+                },
+                1199: {
+                  slidesPerView: 3,
+                  spaceBetween: 0
+                },
+                1599: {
+                  slidesPerView: 4,
+                  spaceBetween: 0
+                },
+              }
+            });
+          </script>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- left/right -->
+    <section class="uk-section uk-section-small uk-padding-remove-top uk-section-secondary darken uk-light uk-preserve-color">
+      <div class="uk-container uk-container-xlarge">
+        <div class="uk-child-width-1-2@m uk-grid-match uk-grid-large" uk-grid>
+          <div class="">
+            <div class="uk-height-1-1">
+              <img class="fit-img" src="public/images/kinnegad/large/image13.jpg" width="1200" alt="">
+            </div>
+          </div>
+          <div class="uk-flex uk-flex-middle">
+            <div>
+              <h2>What is the Community Employment Scheme?</h2>
+              
+              <p>Community Employment is an employment programme funded by the Department of Social Protection (DSP), which helps long-term unemployed people to re-enter the active workforce by offering part-time and temporary placements within local voluntary communities and organisations.</p>
+
+              <p>By doing this they are providing the participants with meaningful practical experience and training opportunities to enhance and develop their technical and personal skills. Participants can avail of the possibility of studying to achieve major awards up to level 6 which are QQI accredited and tailored to suit the needs and career goals of any individual. After completing their placement, participants are encouraged to seek employment elsewhere based on the experience, the development of new skills and the qualifications they have gained.</p>
+
+              <ul class="uk-list uk-margin-medium-bottom">
+                <li><span uk-icon="check" class="uk-margin-right uk-text-green"></span> New personal & technical skills</li>
+                <li><span uk-icon="check" class="uk-margin-right uk-text-green"></span> Practical experience</li>
+                <li><span uk-icon="check" class="uk-margin-right uk-text-green"></span> Training opportunities</li>
+              </ul>
+        
+              <!-- <p class="uk-margin-medium-bottom">Call to ask any question: <span class="uk-text-emphasis uk-text-underline">123-456-7890</span> or <span class="uk-text-emphasis uk-text-underline">456-789-1430</span></p> -->
+
+              <button class="uk-button uk-button-large uk-button-default uk-border-rounded">Learn more about eligibility</button>
+              <button class="uk-button uk-button-large uk-button-danger uk-button-primary uk-border-rounded uk-text-light">Our sponsors <span uk-icon="icon:arrow-right;ratio:1" class="uk-icon"></span></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog carousel -->
+    <section class="uk-container uk-container-expand uk-section uk-section-small uk-padding-remove-top uk-section-secondary darken uk-padding-remove-horizontal uk-padding-remove-bottom">
+      <h2 class="uk-heading-small uk-text-center uk-margin-remove">Latest News</h2>
+      <div id="blogSwiper" class="swiper padded-overflow">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="uk-card uk-card-secondary uk-card-small uk-border-rounded">
+              <div class="uk-card-media-top">
+                <div class="uk-card-badge uk-card-badge-green badge-left">Recent News</div>
+                <img src="public/images/kinnegad/large/image1.jpg" width="900" height="600" alt="">
+              </div>
+              <div class="uk-card-header uk-text-green uk-text-fat">
+                <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                      <li><span class="uk-margin-small-right" uk-icon="clock"></span></li>
+                      <li><time datetime="2016-04-01T19:00">April 01, 2016</time></li>
+                    </ul>
+                  </div>
+                  <div class="uk-width-expand">
+                    <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                      <li><span class="uk-margin-small-right" uk-icon="comments"></span></li>
+                      <li><span>23 comments</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="uk-margin-remove">
+              <div class="uk-card-body">
+                <h3 class="uk-card-title"><a class="uk-link-heading" href="#">Lorem ipsum dolor sit amet, consectetur elit.</a></h3>
+                <p>Despite facing significant financial constraints, this organization continues</p>
+                <a class="uk-button uk-button-text" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="uk-card uk-card-secondary uk-card-small uk-border-rounded">
+              <div class="uk-card-media-top">
+                <div class="uk-card-badge uk-card-badge-orange darken badge-left">Recent Events</div>
+                <img src="public/images/kinnegad/large/image2.jpg" width="900" height="600" alt="">
+              </div>
+              <div class="uk-card-header uk-text-orange darken uk-text-fat">
+                <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                      <li><span class="uk-margin-small-right" uk-icon="clock"></span></li>
+                      <li><time datetime="2016-04-01T19:00">April 01, 2016</time></li>
+                    </ul>
+                  </div>
+                  <div class="uk-width-expand">
+                    <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                      <li><span class="uk-margin-small-right" uk-icon="comments"></span></li>
+                      <li><span>23 comments</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="uk-margin-remove">
+              <div class="uk-card-body">
+                <h3 class="uk-card-title"><a class="uk-link-heading" href="#">Duis aute irure dolor in reprehenderit in voluptate.</a></h3>
+                <p>We are thrilled to announce that thanks to incredible generosity and support</p>
+                <a class="uk-button uk-button-text" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="uk-card uk-card-secondary uk-card-small uk-border-rounded">
+              <div class="uk-card-media-top">
+                <div class="uk-card-badge uk-card-badge-blue darken badge-left">Recent News</div>
+                <img src="public/images/kinnegad/large/image10.jpg" width="900" height="600" alt="">
+              </div>
+              <div class="uk-card-header uk-text-blue darken uk-text-fat">
+                <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                      <li><span class="uk-margin-small-right" uk-icon="clock"></span></li>
+                      <li><time datetime="2016-04-01T19:00">April 01, 2016</time></li>
+                    </ul>
+                  </div>
+                  <div class="uk-width-expand">
+                    <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                      <li><span class="uk-margin-small-right" uk-icon="comments"></span></li>
+                      <li><span>23 comments</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="uk-margin-remove">
+              <div class="uk-card-body">
+                <h3 class="uk-card-title"><a class="uk-link-heading" href="#">Sed ut perspiciatis unde omnis iste natus.</a></h3>
+                <p>Donating to charity can provide a profound sense of fulfillment and happiness</p>
+                <a class="uk-button uk-button-text" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="uk-card uk-card-secondary uk-card-small uk-border-rounded">
+              <div class="uk-card-media-top">
+                <div class="uk-card-badge uk-card-badge-pink darken badge-left">Awards</div>
+                <img src="public/images/kinnegad/large/image13.jpg" width="900" height="600" alt="">
+              </div>
+              <div class="uk-card-header uk-text-pink darken uk-text-fat">
+                <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                      <li><span class="uk-margin-small-right" uk-icon="clock"></span></li>
+                      <li><time datetime="2016-04-01T19:00">April 01, 2016</time></li>
+                    </ul>
+                  </div>
+                  <div class="uk-width-expand">
+                    <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                      <li><span class="uk-margin-small-right" uk-icon="comments"></span></li>
+                      <li><span>23 comments</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="uk-margin-remove">
+              <div class="uk-card-body">
+                <h3 class="uk-card-title"><a class="uk-link-heading" href="#">Nemo enim ipsam voluptatem quia voluptas.</a></h3>
+                <p>A good municipality keeps it’s stakeholders and members well informed.</p>
+                <a class="uk-button uk-button-text" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="uk-card uk-card-secondary uk-card-small uk-border-rounded">
+              <div class="uk-card-media-top">
+                <div class="uk-card-badge uk-card-badge-green badge-left">Recent News</div>
+                <img src="public/images/kinnegad/large/image1.jpg" width="900" height="600" alt="">
+              </div>
+              <div class="uk-card-header uk-text-green uk-text-fat">
+                <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                      <li><span class="uk-margin-small-right" uk-icon="clock"></span></li>
+                      <li><time datetime="2016-04-01T19:00">April 01, 2016</time></li>
+                    </ul>
+                  </div>
+                  <div class="uk-width-expand">
+                    <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                      <li><span class="uk-margin-small-right" uk-icon="comments"></span></li>
+                      <li><span>23 comments</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="uk-margin-remove">
+              <div class="uk-card-body">
+                <h3 class="uk-card-title"><a class="uk-link-heading" href="#">Neque porro quisquam est, qui dolorem ipsum.</a></h3>
+                <p>Despite facing significant financial constraints, this organization continues</p>
+                <a class="uk-button uk-button-text" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="uk-card uk-card-secondary uk-card-small uk-border-rounded">
+              <div class="uk-card-media-top">
+                <div class="uk-card-badge uk-card-badge-orange darken badge-left">Recent Events</div>
+                <img src="public/images/kinnegad/large/image2.jpg" width="900" height="600" alt="">
+              </div>
+              <div class="uk-card-header uk-text-orange darken uk-text-fat">
+                <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                      <li><span class="uk-margin-small-right" uk-icon="clock"></span></li>
+                      <li><time datetime="2016-04-01T19:00">April 01, 2016</time></li>
+                    </ul>
+                  </div>
+                  <div class="uk-width-expand">
+                    <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                      <li><span class="uk-margin-small-right" uk-icon="comments"></span></li>
+                      <li><span>23 comments</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="uk-margin-remove">
+              <div class="uk-card-body">
+                <h3 class="uk-card-title"><a class="uk-link-heading" href="#">Quis autem vel eum reprehenderit qui voluptate.</a></h3>
+                <p>We are thrilled to announce that thanks to incredible generosity and support</p>
+                <a class="uk-button uk-button-text" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+      <script>
+        const blogSwiper = new Swiper('#blogSwiper', {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          watchSlidesProgress: true,
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          breakpoints: {
+            959: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            1199: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            1599: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+          }
+        });
+      </script>
+    </section>
+
+    <!-- social wall -->
+    <section>
+
+      <div class="uk-container uk-container-expand uk-section uk-section-small uk-section-secondary darken uk-padding-remove-horizontal uk-padding-remove-bottom">
+        <h2 class="uk-heading-small uk-text-center uk-margin-bottom">More information</h2>
+      </div>
+
+      <div class="social-wall">
+
+        <!-- 5x (1:4) -->
+        <div class="social-one uk-child-width-1-2@m uk-grid-match uk-grid-collapse" uk-grid>
+    
+          <!-- 1x -->
+          <div class="uk-flex uk-flex-middle uk-flex-center uk-text-center">
+            <div class="uk-height-1-1">
+              <img class="fit-img" src="public/images/kinnegad/large/image12.jpg" width="975" height="975" alt="">
+            </div>
+          </div>
+    
+          <!-- 4x -->
+          <div>
+            <div class="uk-child-width-1-2@m uk-grid-match uk-grid-collapse uk-height-1-1" uk-grid>
+              <div class="uk-background-secondary darken uk-light uk-flex uk-flex-middle uk-flex-center uk-text-center uk-height-1-2 uk-padding">
+                <blockquote cite="#" class="uk-margin-remove">
+                  <span uk-icon="icon: quote-right; ratio: 1.5" class="uk-text-green"></span>
+                  <p class="uk-margin-small-bottom uk-margin-small-top uk-text-fat uk-text-large">"We cannot solve problems with the kind of thinking we employed when we came up with them."</p>
+                  <footer>Albert Einstein</footer>
+                </blockquote>
+              </div>
+              <div class="uk-background-primary uk-light uk-flex uk-flex-middle uk-flex-center uk-text-center uk-height-1-2">
+                <div class="uk-flex uk-flex-middle uk-flex-center uk-height-medium">
+                  <span uk-icon="icon: bluesky; ratio: 6" class="uk-text-emphasis"></span>
+                </div>
+              </div>
+              <div class="uk-background-primary uk-background-green darken uk-light uk-flex uk-flex-middle uk-flex-center uk-height-1-2 uk-padding-large">
+                <div>
+                  <span class="uk-text-meta uk-text-large">who we are</span>
+                  <h2 class="uk-h1 uk-margin-small-bottom uk-margin-remove-top">Learn more about us.</h2>
+                  <p class="uk-margin-small-top">Kinnegad Combined Community Employment Scheme which represents 22 community & voluntary groups across Westmeath/Offaly/Meath.</p>
+                  <button class="uk-button uk-button-large uk-button-default uk-margin-small-right uk-border-rounded">Learn more</button>
+                </div>
+              </div>
+              <div class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-height-1-2">
+                <img class="fit-img" src="public/images/kinnegad/image1.png" width="480" height="480" alt="">
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- 5x (2:1:2) -->
+        <div class="social-two uk-child-width-1-4@m uk-grid-match uk-grid-collapse" uk-grid>
+    
+          <!-- 2x -->
+          <div>
+            <div class="uk-height-1-1 uk-child-width-1-1 uk-grid-collapse" uk-grid>
+              <div class="uk-height-1-2">
+                <img class="fit-img" src="public/images/kinnegad/large/image10.jpg" width="957" height="957" alt="">
+              </div>
+              <div class="uk-height-1-2 uk-background-primary uk-background-pink darken uk-light uk-flex uk-flex-middle uk-flex-center uk-text-center uk-padding">
+                <blockquote cite="#" class="uk-margin-remove">
+                  <span uk-icon="icon: quote-right; ratio: 1.5" class="uk-text-navy"></span>
+                  <p class="uk-margin-small-bottom uk-margin-small-top uk-text-fat uk-text-large">"Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too."</p>
+                  <footer>Mark Twain</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+    
+          <!-- 1x -->
+          <div class="uk-width-1-2@m">
+            <div class="uk-inline">
+              <img class="fit-img" src="public/images/social/four.jpg" width="1200" height="1200" alt="">
+              <div class="uk-position-cover"></div>
+              <div class="uk-position-center uk-dark">
+                <div class="uk-width-large">
+                  <span class="uk-text-meta uk-text-large uk-text-green">ce training</span>
+                  <h2 class="uk-heading-medium uk-text-navy uk-margin-small-bottom uk-margin-remove-top">Job-specific & Progression training.</h2>
+                  <p class="uk-margin-small-top uk-text-lead uk-text-navy">Training is an integral part of Community Employment. Each learner on CE designs an Individual Training Plan (ILP) which outlines work experience and both job specific and progression training.</p>
+                  <button class="uk-button uk-button-large uk-button-danger uk-button-green uk-border-rounded">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- 2x -->
+          <div>
+            <div class="uk-height-1-1 uk-child-width-1-1 uk-grid-collapse" uk-grid>
+              <div class="uk-height-1-2 uk-background-primary uk-background-purple darken uk-light uk-flex uk-flex-middle uk-flex-center uk-padding">
+                <div class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-height-small">
+                  <span class="uk-heading-small">#Training</span>
+                </div>
+              </div>
+              <div class="uk-height-1-2">
+                <img class="fit-img" src="public/images/kinnegad/large/image13.jpg" width="800" height="800" alt="">
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- 4x -->
+        <div class="social-three uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-match uk-grid-collapse" uk-grid>
+    
+          <div class="uk-background-primary uk-background-orange uk-light uk-flex uk-flex-middle uk-flex-center uk-padding-large">
+            <div>
+              <span class="uk-text-meta uk-text-large">ce scheme</span>
+              <h2 class="uk-h1 uk-margin-small-bottom uk-margin-remove-top">Our Sponsors</h2>
+              <p class="uk-margin-small-top">Kinnegad Combined Community Employment Scheme CLG have 22 Sponsors across Westmeath/Offaly/Meath.</p>
+              <button class="uk-button uk-button-large uk-button-default uk-margin-small-right uk-border-rounded">Learn more</button>
+            </div>
+          </div>
+    
+          <div class="uk-background-default uk-flex uk-flex-middle uk-flex-center uk-text-center">
+            <img class="fit-img" src="public/images/kinnegad/large/image2.jpg" width="800" height="800" alt="">
+          </div>
+    
+          <div class="uk-background-muted uk-flex uk-flex-middle uk-flex-center uk-text-center">
+            <img class="fit-img" src="public/images/kinnegad/large/image4.jpg" width="800" height="800" alt="">
+          </div>
+    
+          <div class="uk-background-primary uk-light uk-flex uk-flex-middle uk-flex-center uk-text-center">
+            <div class="uk-height-medium uk-flex uk-flex-middle uk-flex-center">
+              <span uk-icon="icon: facebook; ratio: 6" class="uk-text-emphasis"></span>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- 2x -->
+        <div class="social-four uk-child-width-1-2@m uk-grid-match uk-grid-collapse" uk-grid>
+
+          <div class="uk-background-primary uk-light uk-flex uk-flex-middle uk-flex-center uk-text-center">
+            <div class="uk-height-1-1">
+              <img class="fit-img" src="public/images/kinnegad/large/image3.jpg" width="975" height="975" alt="">
+            </div>
+          </div>
+
+          <div class="uk-background-secondary uk-background-orange darken uk-light uk-flex uk-flex-middle uk-flex-center">
+            <div class="uk-inline">
+              <img src="public/images/social/five.jpg" width="957" height="957" alt="">
+              <div class="uk-overlay-primary uk-overlay-navy uk-position-cover"></div>
+              <div class="uk-overlay uk-position-center uk-dark">
+                <div class="uk-width-large">
+                  <span class="uk-text-meta uk-text-large">who is eligible</span>
+                  <h2 class="uk-heading-medium uk-margin-small-bottom uk-margin-remove-top">Who is eligible for a Community Employment (CE) Scheme.</h2>
+                  <p class="uk-margin-small-top uk-text-lead">In order to be eligible for a Community Employment (CE) Scheme, a person must be in receipt of a qualifying social welfare payment for at least 12 months.</p>
+                  <button class="uk-button uk-button-large uk-button-default uk-border-rounded">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    
+        <!-- 4x -->
+        <div class="social-five uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-grid-collapse" uk-grid>
+    
+          <div class="uk-background-primary uk-background-green uk-light uk-flex uk-flex-middle uk-flex-center uk-text-center uk-padding-large">
+            <span uk-icon="icon: youtube; ratio: 6" class="uk-text-emphasis"></span>
+          </div>
+    
+          <div class="uk-background-muted uk-flex uk-flex-middle uk-flex-center uk-text-center uk-padding">
+            <blockquote cite="#" class="uk-margin-remove">
+              <span uk-icon="icon: quote-right; ratio: 1.5" class="uk-text-green"></span>
+              <p class="uk-margin-small-bottom uk-margin-small-top uk-text-fat uk-text-large">"Success usually comes to those who are too busy to be looking for it."</p>
+              <footer>Henry David Thoreau</footer>
+            </blockquote>
+          </div>
+    
+          <div class="uk-background-muted uk-flex uk-flex-middle uk-flex-center uk-text-center">
+            <img class="fit-img" src="public/images/kinnegad/large/image4.jpg" width="800" height="800" alt="">
+          </div>
+    
+          <div class="uk-background-primary uk-background-purple darken uk-light uk-flex uk-flex-middle uk-flex-center uk-text-center uk-padding">
+            <div class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-height-small">
+              <span class="uk-heading-small">#Progression</span>
+            </div>
+          </div>
+    
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="uk-background-secondary darken">
+    <div class="uk-section-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+      <div class="uk-container uk-container-xlarge">
+        <div class="uk-padding uk-padding-remove-horizontal">
+
+          <div uk-grid>
+            <div class="uk-width-2-5@m">
+              <div>
+                <div uk-grid>
+                  <div class="uk-width-4-5@l">
+                    <div>
+                      <a class="uk-logo" href="#">
+                        <img class="uk-padding-small" src="public/images/logo-dark.png" width="180" height="60" alt="">
+                      </a>
+                      <p class="uk-text-small">Kinnegad Combined Community Employment Scheme which represents 22 community and voluntary groups across  Westmeath/Offaly/Meath. We work actively alongside sponsors/sub Sponsors to help participants of the scheme gain meaningful practical experience, achieve relevant qualifications and training and offer them support and guidance as they work towards achieving their goals and progressing into sustainable secure employment progressing their careers.</p>
+                      <div class="uk-margin-top">
+                        <button class="uk-button uk-button-large uk-button-danger uk-button-green uk-margin-small-right uk-border-rounded">Learn more</button>
+                        <button class="uk-button uk-button-large uk-button-danger uk-button-purple uk-border-rounded">Latest jobs <span uk-icon="icon:arrow-right;ratio:1" class="uk-icon"></span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-5 uk-visible@l"></div>
+                </div>
+              </div>
+            </div>
+            <div class="uk-width-3-5">
+              <div>
+                <div class="uk-grid-small" uk-grid>
+                  <div class="uk-width-1-3@m">
+                    <div>
+                      <h4 class="uk-text-fat">Information</h4>
+                      <ul class="uk-list">
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Who we are</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Executive Summary</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Our Sponsors</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Our Committee</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Our Team</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Contact</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div>
+                      <h4 class="uk-text-fat">Supports</h4>
+                      <ul class="uk-list">
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Job-specific training</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Progression training</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Eligibilty</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Local Social Welfare</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Using Jobs Ireland</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Latest jobs</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div>
+                      <h4 class="uk-text-fat">Contact</h4>
+                      <ul class="uk-list">
+                        <li>
+                          <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-auto"><span uk-icon="location" class="uk-icon uk-text-green"></span></div>
+                            <div class="uk-width-expand">
+                              St. Joseph’s Hall, Rochfortbridge, Co. Westmeath
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-auto"><span uk-icon="mail" class="uk-icon uk-text-green"></span></div>
+                            <div class="uk-width-expand">
+                              admin@kcces.ie
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-auto"><span uk-icon="receiver" class="uk-icon uk-text-green"></span></div>
+                            <div class="uk-width-expand">
+                              044 92 24476
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="uk-container uk-container-xlarge uk-light">
+      <div class="uk-padding-small uk-padding-remove-horizontal uk-text-center uk-text-small">Copyright © 2025 <span class="uk-text-underline uk-text-emphasis">Kinnegad Combined Community Employment Scheme CLG</span>. All Rights Reserved. Company Registration Number: 495228</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

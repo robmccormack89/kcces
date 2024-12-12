@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="public/images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- uikit -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit-icons.min.js"></script>
+
+  <!-- colours & styles -->
+  <link rel="stylesheet" href="public/css/styles.css"/>
+
+  <!-- swiper carousels -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <style>
+    .uk-navbar-toggle-icon svg {
+      height: 25px;
+      width: 25px;
+    }
+    .uk-logo img.uk-padding-small {
+      padding: 5px 0px;
+    }
+    .uk-padding-xsmall {
+      padding: 10px;
+    }
+
+    /* COLOUR_BARS */
+    .rainbow-bar {
+      display:flow-root
+    }
+    .rainbow-bar span {
+      width:16.666%;
+      float:left;
+      height:5px;
+      display: block;
+    }
+    .rainbow-bar .last {
+      width:16.666%!important;
+    }
+
+    .uk-text-underline {
+      text-decoration: underline;
+    }
+
+    .uk-card-transparent,
+    .uk-card-transparent.uk-card-secondary,
+    .uk-card-transparent.uk-card-secondary.darken {
+      background-color: transparent !important;
+    }
+
+    .uk-position-z-index-reset {
+      z-index: 0;
+    }
+
+    .uk-heading-small {
+      font-size: 2.6rem
+    }
+    @media (max-width: 1599px) {
+      .uk-heading-small {
+        font-size: 2.4rem
+      }
+    }
+    @media (max-width: 1199px) {
+      .uk-heading-small {
+        font-size: 2.4rem
+      }
+      .social-wall .uk-heading-medium {
+        font-size: 2.5rem;
+      }
+      .social-wall .uk-text-lead {
+        font-size: 1.1rem;
+      }
+    }
+    @media (max-width: 959px) {
+      .uk-heading-small {
+        font-size: 2.2rem
+      }
+    }
+    @media (max-width: 639px) {
+      .uk-heading-small {
+        font-size: 2rem
+      }
+      .uk-button-large {
+        font-size: .875rem;
+        padding: 0 20px;
+      }
+      .uk-text-large {
+        font-size: 1.2rem;
+        line-height: 1.2;
+      }
+      .social-wall .uk-heading-medium {
+        font-size: 2rem;
+      }
+      .social-wall .uk-text-lead {
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width: 960px) {
+      .uk-height-1-2 {
+        height: 50%;
+      }
+    }
+
+
+
+  </style>
+
+  <header>
+
+    <div class="rainbow-bar">
+      <span class="uk-section-primary uk-section-green"></span>
+      <span class="uk-section-primary"></span>
+      <span class="uk-section-primary uk-section-purple"></span>
+      <span class="uk-section-primary uk-section-pink"></span>
+      <span class="uk-section-primary uk-section-orange"></span>
+      <span class="uk-section-primary uk-section-yellow last"></span>
+    </div>
+
+    <div class="uk-background-secondary darken ukkk-padding uk-padding-remove-horizontal uk-box-shadow-medium uk-position-relative uk-position-z-index">
+
+      <!-- topbar -->
+      <div class="uk-container uk-container-expand">
+        <div class="uk-light uk-grid uk-padding-xsmall uk-padding-remove-horizontal" uk-grid>
+
+          <!-- left -->
+          <div class="uk-width-expand uk-visible@l">
+            <div class="uk-grid-small uk-grid-divider uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                  <li><span class="uk-margin-small-right uk-text-purple" uk-icon="location"></span></li>
+                  <li><span class="uk-text-small uk-text-emphasis">St. Joseph’s Hall, Rochfortbridge, Co. Westmeath</span></li>
+                </ul>
+              </div>
+              <div class="uk-width-auto">
+                <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                  <li><span class="uk-margin-small-right uk-text-pink" uk-icon="mail"></span></li>
+                  <li><a class="uk-text-small" href="mailto:sendmail@risehand.com">admin@kcces.ie</a></li>
+                </ul>
+              </div>
+              <div class="uk-width-auto">
+                <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                  <li><span class="uk-margin-small-right uk-text-green" uk-icon="receiver"></span></li>
+                  <li><a class="uk-text-small" href="mailto:sendmail@risehand.com">044 92 24476</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- right -->
+          <div class="uk-width-1-1 uk-width-auto@l uk-flex uk-flex-middle uk-flex-center uk-flex-left@l uk-text-center uk-text-right@l">
+  
+            <div class="uk-grid-small uk-flex-middle uk-flex-center uk-flex-left@l" uk-grid>
+              <div class="uk-width-auto">
+                <ul class="uk-grid-collapse uk-flex-middle" uk-grid>
+                  <li><span class="uk-margin-small-right uk-text-yellow" uk-icon="happy"></span></li>
+                  <li><span class="uk-text-small uk-text-emphasis">Find us on Socials</span></li>
+                </ul>
+              </div>
+              <div class="uk-width-auto">
+                <ul class="uk-iconnav">
+                  <li><a href="#" uk-icon="icon: facebook; ratio: 1.1" class=""></a></li>
+                  <li><a href="#" uk-icon="icon: instagram; ratio: 1.1" class=""></a></li>
+                  <li><a href="#" uk-icon="icon: bluesky; ratio: 1.1" class=""></a></li>
+                </ul>
+              </div>
+            </div>
+  
+          </div>
+
+        </div>
+      </div>
+
+      <!-- main nav -->
+      <nav class="uk-navbar-container uk-navbar-transparent uk-background-secondary uk-light">
+        <div class="uk-container uk-container-expand">
+          <div uk-navbar="" class="uk-navbar">
+
+            <div class="uk-navbar-left">
+              <a class="uk-navbar-item uk-logo" href="#">
+                <img class="uk-padding-small" src="public/images/logo-dark.png" width="270" height="90" alt="">
+              </a>
+            </div>
+
+            <div class="uk-navbar-center uk-visible@xl">
+              <ul class="uk-navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li class="uk-active">
+                  <a href="#">About <span uk-navbar-parent-icon></span></a>
+                </li>
+                <li>
+                  <a href="#">Employment <span uk-navbar-parent-icon></span></a>
+                </li>
+                <li>
+                  <a href="#">Community <span uk-navbar-parent-icon></span></a>
+                </li>
+                <li>
+                  <a href="#">Training <span uk-navbar-parent-icon></span></a>
+                </li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+              <div class="uk-navbar-item">
+                <ul class="uk-iconnav">
+
+                  <!-- search -->
+                  <li class="uk-flex uk-flex-middle">
+                    <a href="#" uk-icon="icon: search; ratio: 1.2" class="uk-icon"></a>
+                  </li>
+
+                  <!-- button -->
+                  <li class="uk-flex uk-flex-middle uk-visible@s">
+                    <button class="uk-button uk-button-small uk-button-danger uk-button-purple uk-border-rounded">Latest jobs <span uk-icon="icon:arrow-right;ratio:1.2"></span></button>
+                  </li>
+
+                  <!-- mobile -->
+                  <li class="uk-flex uk-flex-middle">
+                    <a class="uk-navbar-toggle uk-navbar-toggle-animate uk-icon uk-navbar-toggle-icon" href="#" uk-navbar-toggle-icon="" role="button" aria-haspopup="true" aria-label="Open menu"></a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- left/right -->
+    <section class="uk-section uk-section-secondary darken uk-light uk-preserve-color">
+      <div class="uk-container uk-container-xlarge">
+        <div>
+          <h1>Executive Summary</h1>
+          
+          <p>In 2011 Kinnegad CE Scheme moved offices to St. Joseph’s Parish Hall Rochfortbridge Co. Westmeath. Since the move in May 2011 some changes have taken place and the feedback from sponsors and the CE participants have been encouraging.  The administrative centre of the scheme in the Parish Hall continues to be expertly handled by two extremely competent CE administrators.  Some new polices have been adopted by the new committee for the efficient running of the scheme with the approval of the main sponsoring group.</p>
+
+          <p>From 2005 the group has expanded to take in community and voluntary groups from Milltownpass and Rochfortbridge.</p>
+
+          <p>In 2008 Kinnegad CE Scheme again expanded to take in groups from the Castlejordan/Ballinabrackey area. Since inclusion in the Kinnegad scheme.</p>
+
+          <p>In 2012 due to the continued success of the CE scheme we were able to introduce two new Sponsor groups to the scheme Kinnegad Juniors AFC and Milltownpass GAA.</p>
+
+          <p>The CE Scheme creates an awareness of community involvement, fosters a pride in the environment, provides an opportunity to include the marginalised and socially disadvantaged offering them retraining and supporting their introduction back into the workplace and can provide recreational facilities for the young and elderly.</p>
+    
+          <!-- <p class="uk-margin-medium-bottom">Call to ask any question: <span class="uk-text-emphasis uk-text-underline">123-456-7890</span> or <span class="uk-text-emphasis uk-text-underline">456-789-1430</span></p> -->
+
+          <div class="uk-margin-medium-top">
+            <button class="uk-button uk-button-large uk-button-default uk-border-rounded">Who we are</button>
+            <button class="uk-button uk-button-large uk-button-danger uk-button-primary uk-border-rounded uk-text-light">Our sponsors <span uk-icon="icon:arrow-right;ratio:1" class="uk-icon"></span></button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="uk-background-secondary darken">
+    <div class="uk-section-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+      <div class="uk-container uk-container-xlarge">
+        <div class="uk-padding uk-padding-remove-horizontal">
+
+          <div uk-grid>
+            <div class="uk-width-2-5@m">
+              <div>
+                <div uk-grid>
+                  <div class="uk-width-4-5@l">
+                    <div>
+                      <a class="uk-logo" href="#">
+                        <img class="uk-padding-small" src="public/images/logo-dark.png" width="180" height="60" alt="">
+                      </a>
+                      <p class="uk-text-small">Kinnegad Combined Community Employment Scheme which represents 22 community and voluntary groups across  Westmeath/Offaly/Meath. We work actively alongside sponsors/sub Sponsors to help participants of the scheme gain meaningful practical experience, achieve relevant qualifications and training and offer them support and guidance as they work towards achieving their goals and progressing into sustainable secure employment progressing their careers.</p>
+                      <div class="uk-margin-top">
+                        <button class="uk-button uk-button-large uk-button-danger uk-button-green uk-margin-small-right uk-border-rounded">Learn more</button>
+                        <button class="uk-button uk-button-large uk-button-danger uk-button-purple uk-border-rounded">Latest jobs <span uk-icon="icon:arrow-right;ratio:1" class="uk-icon"></span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-5 uk-visible@l"></div>
+                </div>
+              </div>
+            </div>
+            <div class="uk-width-3-5">
+              <div>
+                <div class="uk-grid-small" uk-grid>
+                  <div class="uk-width-1-3@m">
+                    <div>
+                      <h4 class="uk-text-fat">Information</h4>
+                      <ul class="uk-list">
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Who we are</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Executive Summary</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Our Sponsors</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Our Committee</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Our Team</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Contact</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div>
+                      <h4 class="uk-text-fat">Supports</h4>
+                      <ul class="uk-list">
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Job-specific training</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Progression training</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Eligibilty</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Local Social Welfare</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Using Jobs Ireland</li>
+                        <li><span uk-icon="chevron-right" class="uk-icon uk-text-green uk-margin-right"></span>Latest jobs</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div>
+                      <h4 class="uk-text-fat">Contact</h4>
+                      <ul class="uk-list">
+                        <li>
+                          <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-auto"><span uk-icon="location" class="uk-icon uk-text-green"></span></div>
+                            <div class="uk-width-expand">
+                              St. Joseph’s Hall, Rochfortbridge, Co. Westmeath
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-auto"><span uk-icon="mail" class="uk-icon uk-text-green"></span></div>
+                            <div class="uk-width-expand">
+                              admin@kcces.ie
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-auto"><span uk-icon="receiver" class="uk-icon uk-text-green"></span></div>
+                            <div class="uk-width-expand">
+                              044 92 24476
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="uk-container uk-container-xlarge uk-light">
+      <div class="uk-padding-small uk-padding-remove-horizontal uk-text-center uk-text-small">Copyright © 2025 <span class="uk-text-underline uk-text-emphasis">Kinnegad Combined Community Employment Scheme CLG</span>. All Rights Reserved. Company Registration Number: 495228</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
