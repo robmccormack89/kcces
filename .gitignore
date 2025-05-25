@@ -6,3 +6,4 @@ node_modules/
 .sass-cache/
 compilation_cache/
 _dev/
+__dev/
